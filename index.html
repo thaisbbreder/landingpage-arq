@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon" />
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- icone  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+
+    <nav class="navbar fixed-top m-4" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-1 primary-color" href="#">S P A Z I O</a>
+        <button
+          class="navbar-toggler primary-color border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body ms-3 primary-color">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >/home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">/projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">/sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">/fale conosco</a>
+              </li>
+            </ul>
+
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn btn-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLIDER-->
+    <div id="slider" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel">
+          <img
+            src="./img/project-9.jpg"
+            class="d-block w-100"
+            alt="projeto1"
+          />
+        </div>
+
+       
+       
+        <div class="carousel-item" id="carousel">
+          <img
+            src="./img/project-13.jpg"
+            class="d-block w-100"
+            alt="projeto4"
+          />
+        </div>
+        <div class="carousel-item" id="carousel">
+          <img src="./img/project-11.jpg" class="d-block w-100" alt="projeto5" />
+        </div>
+        <div class="carousel-item" id="carousel">
+          <img src="./img/project-14.jpg" class="d-block w-100" alt="projeto6" />
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--PROJETOS-->
+    <div class="card-groups">
+      <p class="display-2 text-center p-4">/projetos</p>
+      <div class="card-group">
+        <div class="card">
+          <a class="card-link" href="#">
+            <img
+              class="card-img-top"
+              src="./img/project-10.jpg"
+              alt="Imagem de capa do card"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">IPÊ</h5>
+          </div>
+        </div>
+
+        <div class="card">
+          <a class="card-link" href="#">
+            <img
+              class="card-img-top"
+              src="./img/project-5.jpg"
+              alt="Imagem de capa do card"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">COQUEIRO</h5>
+   
+          </div>
+        </div>
+
+        <div class="card">
+          <a class="card-link" href="#">
+            <img
+              class="card-img-top"
+              src="./img/project-3.jpg"
+              alt="Imagem de capa do card"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">CEDRO</h5>
+      
+          </div>
+        </div>
+
+        <div class="card-group">
+          <div class="card">
+            <a class="card-link" href="#">
+              <img
+                class="card-img-top"
+                src="./img/project-8.jpg"
+                alt="Imagem de capa do card"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">JACARANDÁ</h5>
+              
+            </div>
+          </div>
+
+          <div class="card">
+            <a class="card-link" href="#">
+              <img
+                class="card-img-top"
+                src="./img/project-2.jpg"
+                alt="Imagem de capa do card"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">BAMBU</h5>
+              
+            </div>
+          </div>
+
+          <div class="card">
+            <a class="card-link" href="#">
+              <img
+                class="card-img-top"
+                src="./img/project-12.jpg"
+                alt="Imagem de capa do card"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">EUCALIPTO</h5>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ESCRITORIO-->
+
+    <div class="container" id="featured-container">
+      <h1 class="display-2 text-center p-4">/escritório</h1>
+
+      <h1 class="card-title">A equipe</h1>
+      <div class="col-12" id="featured-images">
+        <div class="row g-6">
+          <div class="col-12 col-md-6">
+            <p class="text-justify">
+              Bernardes Arquitetura é fruto de uma história que atravessa
+              gerações. É um espaço criado em 2012 por Thiago Bernardes onde
+              busca aprofundar seu trabalho autoral e criar novas parcerias.
+              Hoje integram o escritório os sócios Nuno Costa Nunes, Márcia
+              Santoro, Camila Tariki, Dante Furlan, Francisco Abreu, Rafael de
+              Oliveira, Thiago Moretti e Antonia Bernardes.Bernardes Arquitetura
+              é fruto de uma história que atravessa gerações. É um espaço criado
+              em 2012 por Thiago Bernardes onde busca aprofundar seu trabalho
+              autoral e criar novas parcerias. Hoje integram o escritório os
+              sócios Nuno Costa Nunes, Márcia Santoro, Camila Tariki, Dante
+              Furlan, Francisco Abreu, Rafael de Oliveira, Thiago Moretti e
+              Antonia Bernardes.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="img/project-1.jpg"
+              alt="Projeto 1"
+              class="img-fluid shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FORMULARIO-->
+
+    <div class="container p-4 mb-5" id="featured-container">
+      <h1 class="display-2 text-center p-4">/fale conosco</h1>
+      <form class="container p-3 d-flex justify-content-center">
+        <div class="form-group w-50">
+          <label for="exampleInputEmail1">Nome</label>
+          <input
+            type="text"
+            class="form-control mb-3"
+            id="name-input"
+            placeholder=""
+          />
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control mb-3" id="email-input" />
+          <label for="exampleInputEmail1">Telefone</label>
+          <input type="email" class="form-control mb-3" id="phone-input" />
+          <label for="exampleInputEmail1">Mensagem</label>
+          <textarea class="form-control mb-3" id="Textarea" rows="3">
+          </textarea>
+
+          <button type="submit" class="btn btn-light mb-2">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer
+      class="container-fluid bg-dark-color pt-5 secondary-color"
+      id="footer"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER 1 -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>S P A Z I O</h2>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER 2 -->
+          <div class="col-12 mb-1" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(48)9999-9999</p>
+                <p class="secondary-color">contato@arq.com</p>
+
+                <p class="secondary-color">
+                  Rua Palmeiras, 900 A, Ipatinga Minas Gerais | Brasil
+                </p>
+                <i class="bi bi-facebook"> </i>
+                <i class="bi bi-instagram"> </i>
+                <i class="bi bi-youtube"> </i>
+                <i class="bi bi-twitter"> </i>
+              </div>
+
+              <div class="col-12 col-md-6" id="links-container">
+                <div class="row">
+                  <h4>Fique por dentro das novidades</h4>
+                  <p class="secondary-color">
+                    Inscreva-se para saber em primeira mão
+                  </p>
+                  <form>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Digite o seu e-mail"
+                      />
+                    </div>
+                    <button class="btn btn-dark mb-5">Inscrever</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER 3 -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">@thaisbbreder &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                  Realizamos o seu projeto com
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+    favoritar
+    projetos, comercial, residencial
+
+    escritorio: no canto
+-->
